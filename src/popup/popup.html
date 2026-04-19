@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Monitor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║          H E A D E R        ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <header class="hd">
+    <div class="hd-brand">
+      <div class="hd-icon">
+        <!-- Original SVG: stacked chevron / usage gauge motif -->
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 14 L10 8 L16 14"/>
+          <path d="M4 10 L10 4 L16 10"/>
+        </svg>
+      </div>
+      <div>
+        <div class="hd-name">Claude Monitor</div>
+        <div class="hd-tagline">REAL-TIME · LOCAL</div>
+      </div>
+    </div>
+
+    <div class="hd-controls">
+      <div class="hd-live" title="Interceptor active"></div>
+      <button class="hd-btn" id="btn-theme" title="Toggle theme" aria-label="Toggle theme">
+        <!-- Sun (shown when dark → switch to light) -->
+        <svg id="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41
+                   M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <!-- Moon (shown when light → switch to dark) -->
+        <svg id="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             style="display:none">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║           B O D Y           ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <main class="pm-body">
+
+    <!-- Empty / waiting state -->
+    <div class="card" id="view-empty">
+      <div class="empty">
+        <div class="empty-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <div class="empty-title">Waiting for data</div>
+        <div class="empty-hint">Open a Claude conversation and send a message.</div>
+      </div>
+    </div>
+
+    <!-- Active data state -->
+    <div class="card hidden" id="view-data">
+
+      <!-- Token spotlight -->
+      <div class="spotlight">
+        <div class="spot-left">
+          <div class="spot-label">Context Tokens</div>
+          <div class="spot-value" id="val-tokens">0</div>
+        </div>
+        <div class="status-badge">
+          <div class="status-dot"></div>
+          <span id="val-status">Live</span>
+        </div>
+      </div>
+
+      <div class="rule"></div>
+
+      <!-- Session Usage -->
+      <div class="usage-block" id="blk-session">
+        <div class="usage-row">
+          <div class="usage-name">Session · 5 h</div>
+          <div class="usage-pct" id="pct-session">--%</div>
+        </div>
+        <div class="track">
+          <div class="fill" id="fill-session"></div>
+        </div>
+        <div class="usage-foot" id="time-session">--</div>
+      </div>
+
+      <!-- Weekly Usage -->
+      <div class="usage-block" id="blk-weekly">
+        <div class="usage-row">
+          <div class="usage-name">Weekly · 7 d</div>
+          <div class="usage-pct" id="pct-weekly" style="color:var(--purple-hi)">--%</div>
+        </div>
+        <div class="track">
+          <div class="fill weekly" id="fill-weekly"></div>
+        </div>
+        <div class="usage-foot" id="time-weekly">--</div>
+      </div>
+
+    </div>
+
+    <!-- Settings -->
+    <div class="card">
+      <div class="settings-title">Preferences</div>
+
+      <div class="setting-row">
+        <span>Show strip in Claude</span>
+        <label class="tog" title="Toggle the in-page glass strip">
+          <input type="checkbox" id="tog-strip" checked>
+          <div class="tog-track"></div>
+          <div class="tog-thumb"></div>
+        </label>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║         F O O T E R         ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <footer class="pm-footer">
+    <span>Claude Monitor · all data stays on your device</span>
+  </footer>
+
+  <script src="../utils/logger.js"></script>
+  <script src="../utils/storage.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

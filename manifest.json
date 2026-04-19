@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Monitor",
+  "version": "3.0.0",
+  "description": "Real-time session & weekly usage tracking for Claude AI. Glass UI, zero telemetry.",
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://claude.ai/*"
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_title": "Claude Monitor",
+    "default_icon": {
+      "16":  "icons/icon16.png",
+      "48":  "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://claude.ai/*"],
+      "js": [
+        "src/utils/logger.js",
+        "src/utils/storage.js",
+        "src/content/ui-elements.js",
+        "src/content/monitor.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "src/injected/interceptor.js",
+        "icons/*"
+      ],
+      "matches": ["*://claude.ai/*"]
+    }
+  ],
+  "icons": {
+    "16":  "icons/icon16.png",
+    "48":  "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
