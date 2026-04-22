@@ -1,5 +1,5 @@
 /**
- * ClaudeMonitor — Logger
+ * ClaudePulse — Logger
  * Lightweight, level-gated console wrapper.
  */
 const CmLog = (() => {

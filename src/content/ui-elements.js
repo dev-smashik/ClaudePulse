@@ -1,5 +1,5 @@
 /**
- * ClaudeMonitor — In-Page Glass Strip
+ * ClaudePulse — In-Page Glass Strip
  *
  * Renders a slim frosted-glass status bar directly in Claude's footer,
  * matching the layout shown in the README screenshot:

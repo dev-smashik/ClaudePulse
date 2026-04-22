@@ -1,7 +1,7 @@
-# ⚡ Claude Monitor
+# ⚡ ClaudePulse
 
 <div align="center">
-  <img src="icons/icon128.png" alt="Claude Monitor Logo" width="128" />
+  <img src="icons/icon128.png" alt="ClaudePulse Logo" width="128" />
   
   <p><strong>Real-time session & weekly usage tracking for Claude AI with zero telemetry.</strong></p>
 
@@ -14,7 +14,9 @@
 
 <br />
 
-Claude Monitor is a powerful, lightweight Chrome Extension designed for users of Claude AI. It seamlessly intercepts network data to provide pinpoint accurate usage stats and integrates elegantly into the native Claude user interface. Best of all? It's 100% local, safe, and telemetry-free.
+## 📝 About
+
+ClaudePulse is a powerful, lightweight Chrome Extension designed for power users of Claude AI. It seamlessly intercepts network data to provide pinpoint accurate usage stats and integrates elegantly into the native Claude user interface. Best of all? It's 100% local, safe, and telemetry-free.
 
 ---
 
@@ -53,7 +55,7 @@ Claude Monitor is a powerful, lightweight Chrome Extension designed for users of
 
 Historically, most browser extensions for LLM clients rely on fragile HTML "DOM scraping." When the LLM provider updates their CSS classnames, the extension completely breaks. 
 
-**Claude Monitor** solves this permanently:
+**ClaudePulse** solves this permanently:
 1. **Interceptor:** Pushes `interceptor.js` straight into the webpage's active execution core using `chrome.scripting`.
 2. **API Sniffing:** Passively listens to `GET .../usage` and `.../completion` SSE streams, cleanly intercepting token usages without modifying requests or interrupting Claude.
 3. **Event Dispatch:** Safely communicates the mathematical payload via a secure `window.dispatchEvent` boundary into the Extension Content Script.
@@ -69,7 +71,7 @@ Because this extension operates entirely in your local browser sandbox, you can 
 2. Open Google Chrome and navigate to `chrome://extensions/`.
 3. In the top right corner, toggle **Developer mode** on.
 4. Click **Load unpacked** in the top left.
-5. Select the overarching `Claude Monitoring` codebase directory.
+5. Select the overarching `ClaudePulse` codebase directory.
 6. **Done!** Pin the extension to your toolbar and refresh your [Claude.ai](https://claude.ai) page to see it strictly in action.
 
 ---
@@ -79,7 +81,7 @@ Because this extension operates entirely in your local browser sandbox, you can 
 This extension was deliberately built without build tools (No Webpack, No Rollup) so it remains highly readable, hackable, and completely transparent:
 
 ```text
-Claude Monitoring/
+ClaudePulse/
 ├── manifest.json
 ├── README.md
 ├── icons/                 # Extension logos (16/48/128 px)

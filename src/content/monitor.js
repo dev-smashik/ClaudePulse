@@ -1,5 +1,5 @@
 /**
- * ClaudeMonitor — Content Script Orchestrator
+ * ClaudePulse — Content Script Orchestrator
  * Wires interceptor events → data normalization → storage → UI strip.
  */
 (async () => {
@@ -63,7 +63,7 @@
   }
 
   // ── Handle incoming interceptor events ─────────────────────────────
-  window.addEventListener('ClaudeMonitor', async (ev) => {
+  window.addEventListener('ClaudePulse', async (ev) => {
     const { type, payload } = ev.detail ?? {};
 
     if (type === 'cm:usage' || type === 'cm:limit') {

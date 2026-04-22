@@ -1,5 +1,5 @@
 /**
- * ClaudeMonitor — Popup Controller
+ * ClaudePulse — Popup Controller
  * Reads from CmStore, renders to the glass popup UI.
  * 100 % original logic.
  */

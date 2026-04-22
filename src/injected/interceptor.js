@@ -1,5 +1,5 @@
 /**
- * ClaudeMonitor — Network Interceptor
+ * ClaudePulse — Network Interceptor
  * Runs in MAIN world (injected by service worker via chrome.scripting).
  * Wraps window.fetch to observe Claude API traffic and dispatch typed events.
  */
@@ -67,7 +67,7 @@
 
   function _emit(type, payload) {
     window.dispatchEvent(
-      new CustomEvent('ClaudeMonitor', { detail: { type, payload } })
+      new CustomEvent('ClaudePulse', { detail: { type, payload } })
     );
   }
 

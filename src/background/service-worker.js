@@ -1,5 +1,5 @@
 /**
- * ClaudeMonitor — Service Worker
+ * ClaudePulse — Service Worker
  * Registers the MAIN-world interceptor and manages notifications/alarms.
  */
 importScripts('../utils/logger.js', '../utils/storage.js');
@@ -50,7 +50,7 @@ chrome.storage.onChanged.addListener((changes, area) => {
         chrome.notifications.create({
           type    : 'basic',
           iconUrl : 'icons/icon128.png',
-          title   : '⚡ Claude Monitor',
+          title   : '⚡ ClaudePulse',
           message : `Session usage crossed ${t}% (now ${newPct.toFixed(1)}%)`,
           priority: 1,
         });
@@ -75,7 +75,7 @@ chrome.alarms.onAlarm.addListener(alarm => {
     chrome.notifications.create({
       type    : 'basic',
       iconUrl : 'icons/icon128.png',
-      title   : '✅ Claude Monitor',
+      title   : '✅ ClaudePulse',
       message : 'Your session limit has reset — fully refreshed!',
       priority: 2,
     });

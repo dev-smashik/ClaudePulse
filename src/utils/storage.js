@@ -1,5 +1,5 @@
 /**
- * ClaudeMonitor — Storage
+ * ClaudePulse — Storage
  * Thin async wrapper around chrome.storage.local with schema defaults.
  */
 const CmStore = (() => {

@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Claude Monitor",
+  "name": "ClaudePulse",
   "version": "3.0.0",
   "description": "Real-time session & weekly usage tracking for Claude AI. Glass UI, zero telemetry.",
   "permissions": [
@@ -14,7 +14,7 @@
   ],
   "action": {
     "default_popup": "src/popup/popup.html",
-    "default_title": "Claude Monitor",
+    "default_title": "ClaudePulse",
     "default_icon": {
       "16":  "icons/icon16.png",
       "48":  "icons/icon48.png",
