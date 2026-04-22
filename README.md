@@ -29,6 +29,8 @@ ClaudePulse is a powerful, lightweight Chrome Extension designed for power users
 - [Folder Structure](#-folder-structure)
 - [Troubleshooting](#-troubleshooting)
 - [Privacy First](#-privacy-first)
+- [Release Notes](RELEASE_NOTES.md)
+
 
 ---
 
@@ -65,14 +67,31 @@ Historically, most browser extensions for LLM clients rely on fragile HTML "DOM 
 
 ## 🛠️ Installation Guide
 
-Because this extension operates entirely in your local browser sandbox, you can easily load it via Developer Mode:
+Follow these steps to install **ClaudePulse** in your browser using Developer Mode:
 
-1. **Download/Clone** this repository to your local machine.
-2. Open Google Chrome and navigate to `chrome://extensions/`.
-3. In the top right corner, toggle **Developer mode** on.
-4. Click **Load unpacked** in the top left.
-5. Select the overarching `ClaudePulse` codebase directory.
-6. **Done!** Pin the extension to your toolbar and refresh your [Claude.ai](https://claude.ai) page to see it strictly in action.
+### 1. Download the Project
+- **Option A (Git):** Clone this repository using `git clone https://github.com/dev-smashik/Claude-AI-Session-monitor-Chrome-Extention.git`
+- **Option B (ZIP):** Download the repository as a ZIP file from GitHub and extract it to a folder on your computer.
+
+### 2. Open Chrome Extensions
+- Launch Google Chrome.
+- In the address bar, type `chrome://extensions/` and press Enter.
+- Alternatively, click the **three dots** (Menu) > **Extensions** > **Manage Extensions**.
+
+### 3. Enable Developer Mode
+- In the top-right corner of the Extensions page, toggle the **Developer mode** switch to **ON**.
+
+### 4. Load the Extension
+- Click the **Load unpacked** button that appears in the top-left corner.
+- In the file picker, navigate to and select the **root folder** of this project (the folder containing `manifest.json`).
+
+### 5. Finalize Setup
+- **Pin the Extension:** Click the "Puzzle" icon (Extensions) in your Chrome toolbar and click the **Pin** icon next to **ClaudePulse**.
+- **Refresh Claude:** Navigate to [Claude.ai](https://claude.ai) and refresh the page to initialize the tracker.
+
+> [!NOTE]
+> You must keep the project folder on your computer for the extension to continue working. If you move or delete the folder, the extension will be removed from Chrome.
+
 
 ---
 
@@ -126,6 +145,12 @@ If you are developing or experiencing bugs:
 Transparency is absolutely critical when granting extension storage and script running permissions:
 - **No Data Collection:** This extension processes numeric data entirely locally. It does not collect, transmit, trace, or monetize any of your prompt/response text.
 - **Isolated Domain Execution:** The network interceptors exclusively execute on the `*://claude.ai/*` origin framework.
+
+---
+
+## 🚀 Release History
+
+Stay up to date with the latest features and fixes by checking our [Release Notes](RELEASE_NOTES.md).
 
 ---
 
