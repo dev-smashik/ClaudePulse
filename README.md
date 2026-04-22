@@ -6,7 +6,6 @@
   <p><strong>Real-time session & weekly usage tracking for Claude AI with zero telemetry.</strong></p>
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-  [![Manifest: V3](https://img.shields.io/badge/Manifest-V3-success.svg)](#)
   [![Platform: Chrome](https://img.shields.io/badge/Platform-Chrome-yellow.svg)](#)
   [![Privacy: 100% Local](https://img.shields.io/badge/Privacy-100%25_Local-brightgreen.svg)](#)
 
@@ -47,8 +46,7 @@ ClaudePulse is a powerful, lightweight Chrome Extension designed for power users
 ## 📸 Previews
 
 <div align="center">
-  <img src="screenshots/chat.png" alt="Popup UI" width="300" />
-  <img src="screenshots/strip.png" alt="In-App Strip" width="600" />
+  <img src="screenshots/chat.png" alt="Popup UI" width="900" />
 </div>
 
 
@@ -156,5 +154,5 @@ Stay up to date with the latest features and fixes by checking our [Release Note
 ---
 
 <div align="center">
-  <i>Built with ❤️ for power users of Claude AI</i>
+<i>Developed by ❤️ dev-smashik for all Claude AI users</i>
 </div>
