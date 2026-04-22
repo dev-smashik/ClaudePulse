@@ -48,8 +48,8 @@ ClaudePulse is a powerful, lightweight Chrome Extension designed for power users
 
 > *(Note: You can add your actual screenshot paths here for GitHub)*
 > 
-> - **Popup UI:** `![Popup Image](screenshots/popup.png)`
-> - **In-App Strip:** `![In-App Strip](screenshots/in-app-strip.png)`
+> - **Popup UI:** `![Popup Image](screenshots/chat.png)`
+> - **In-App Strip:** `![In-App Strip](screenshots/strip.png)`
 
 ---
 
