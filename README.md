@@ -47,8 +47,7 @@ ClaudePulse is a powerful, lightweight Chrome Extension designed for power users
 ## 📸 Previews
 
 <div align="center">
-  <img src="screenshots/chat.png" alt="Popup UI" width="300" />
-  <img src="screenshots/strip.png" alt="In-App Strip" width="600" />
+  <img src="screenshots/chat.png" alt="Popup UI" width="900" />
 </div>
 
 
