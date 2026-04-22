@@ -154,5 +154,5 @@ Stay up to date with the latest features and fixes by checking our [Release Note
 ---
 
 <div align="center">
-  <i>Built with ❤️ for power users of Claude AI</i>
+<i>Developed by ❤️ dev-smashik for all Claude AI users</i>
 </div>
