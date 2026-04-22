@@ -33,4 +33,4 @@ This major release introduces the complete architectural shift to robust network
 ---
 
 > [!TIP]
-> Keep your extension updated to the latest version to ensure compatibility with Claude.ai's frequent updates. If something breaks, please [open an issue](https://github.com/dev-smashik/Claude-AI-Session-monitor-Chrome-Extention/issues).
+> Keep your extension updated to the latest version to ensure compatibility with Claude.ai's frequent updates. If something breaks, please [open an issue](https://github.com/dev-smashik/ClaudePulse/issues).

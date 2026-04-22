@@ -69,7 +69,8 @@ Historically, most browser extensions for LLM clients rely on fragile HTML "DOM 
 Follow these steps to install **ClaudePulse** in your browser using Developer Mode:
 
 ### 1. Download the Project
-- **Option A (Git):** Clone this repository using `git clone https://github.com/dev-smashik/Claude-AI-Session-monitor-Chrome-Extention.git`
+- **Option A (Git):** Clone this repository using `git clone https://github.com/dev-smashik/ClaudePulse.git`
+
 - **Option B (ZIP):** Download the repository as a ZIP file from GitHub and extract it to a folder on your computer.
 
 ### 2. Open Chrome Extensions
